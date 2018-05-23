@@ -23,6 +23,7 @@ header nav h4 {
 main {
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 main .der {
@@ -61,20 +62,18 @@ main .izq {
   width: 50%;
 }
 
-main .izq .img {
+main .izq img {
   width: 100%;
+  height: 100%;
 }
 
-main .izq .img img {
-  width: 100%;
-}
-
-main .izq .img img:hover {
+main .izq img:hover {
   opacity: 4;
 }
 
 footer {
   width: 100%;
+  bottom: 0;
   background-color: #000;
 }
 
@@ -91,6 +90,13 @@ footer .foot p {
   color: #fff;
 }
 
+@media screen and (max-width: 1160px) {
+  footer {
+    bottom: 0;
+    position: absolute;
+  }
+}
+
 @media screen and (max-width: 860px) {
   main {
     width: 100%;
@@ -102,6 +108,9 @@ footer .foot p {
   main .der {
     width: 100%;
     padding: 1.5em;
+  }
+  footer {
+    bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
