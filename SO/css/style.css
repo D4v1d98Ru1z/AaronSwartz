@@ -90,13 +90,6 @@ footer .foot p {
   color: #fff;
 }
 
-@media screen and (max-width: 1160px) {
-  footer {
-    bottom: 0;
-    position: absolute;
-  }
-}
-
 @media screen and (max-width: 860px) {
   main {
     width: 100%;
